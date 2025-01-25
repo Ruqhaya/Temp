@@ -1,8 +1,8 @@
 const ENDPOINT = 'https://cloud.appwrite.io/v1';
-const PROJECT_ID = '67793be40021677a1eeb';
-const DATABASE_ID = '67793f61003035733e4f';
-const COLLECTION_ID = '67793f6c002d444aadeb';
-const BUCKET_ID = '677940fa0003eac144ae';
+const PROJECT_ID = '67779625001f8a9b5167';
+const DATABASE_ID = '677797940033f513e68d';
+const COLLECTION_ID = '677797aa0004ea4837fa';
+const BUCKET_ID = '67779802003be46f93a9';
 
 export async function getCurrentSession() {
   try {
@@ -158,6 +158,7 @@ function splitContentIntoChunks(content) {
 
 export async function createNote(sessionId, noteData) {
   const { content, metadata, ...restData } = noteData;
+  console.log(content)
 
   // First, upload content as a file if it's large
   let contentFileId = null;

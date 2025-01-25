@@ -43,12 +43,12 @@ export default function Home() {
         return <SmartSearch />;
       case "add new thought":
         return <AddThought />;
-      case "published notes":
-        return <PublishedNotes />;
+      // case "published notes":
+      //   return <PublishedNotes />;
       case "para space":
         return <ParaSpace />;
-      case "canvas":
-        return <Canvas />;
+      // case "canvas":
+      //   return <Canvas />;
       case "graph view":
         return <GraphView />;
       // default:
